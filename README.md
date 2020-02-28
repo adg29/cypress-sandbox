@@ -12,6 +12,10 @@ See https://docs.cypress.io/guides/guides/environment-variables.html#Option-2-cy
 
 - `npm install`
 
+### Run
+
+- `npm run cypress:open`
+
 
 ## Wishlist
 
