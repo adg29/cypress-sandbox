@@ -1,0 +1,6 @@
+{
+  "baseUrl": "http://etsy.com",
+  "fixturesFolder": false,
+  "pluginsFile": false,
+  "supportFile": false
+}
