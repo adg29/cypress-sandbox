@@ -1,6 +1,5 @@
 {
   "baseUrl": "http://etsy.com",
   "fixturesFolder": "cypress/fixtures",
-  "pluginsFile": false,
-  "supportFile": false
+  "pluginsFile": false
 }

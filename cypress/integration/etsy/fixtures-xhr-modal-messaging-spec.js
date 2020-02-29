@@ -6,6 +6,7 @@ describe('XHR Messaging via Modal using fixtures', function () {
   // should be passed via environment variables
   const username = Cypress.env('ETSY_USERNAME') 
   const password = Cypress.env('ETSY_PASSWORD') 
+  Cypress.Cookies.debug(true)
 
   context('XHR form submission', function () {
 
@@ -27,7 +28,7 @@ describe('XHR Messaging via Modal using fixtures', function () {
         const userLogin = `${favorite["User"].login_name}`
         it(`Contacts ${userLogin}`, () => {
           cy.visit(`/people/${userLogin}`)
-          cy.get('.convo-overlay-trigger', {timeout: 30000}).filter(':visible').as('messageTrigger')
+          cy.get('.convo-overlay-trigger', {timeout: 30000}).filter(':visible').last().as('messageTrigger')
             .click()
           cy.get('form#chat-ui-composer textarea', {timeout: 60000}).type(Cypress.env('MARKETING_MESSAGE'))
           cy.get('form#chat-ui-composer button[aria-label="Send chat message"]').should('be.visible')
