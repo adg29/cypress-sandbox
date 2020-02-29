@@ -17,7 +17,7 @@ Cypress.Commands.add('findAllListingsFavoredBy', (listingId, options = {}) => {
     message: `${listingId}`,
   })
 
-  let url = `https://openapi.etsy.com/v2/listings/${listingId}/favored-by?api_key=${API_KEY}&includes=User&limit=100`
+  let url = `https://openapi.etsy.com/v2/listings/${LISTING_ID}/favored-by?api_key=${API_KEY}&includes=User&limit=100`
   if (options.page) url += `&page=${options.page}`
   cy.request({
     method: 'GET',
@@ -56,6 +56,7 @@ context('Reusable "findAllListingsFavoredBy" custom command', function () {
   it('can iterate over paginated results', function () {
     cy.expectIterativePaginationResults(initialResponse, favoriters)
       .then(() => {
+        cy.writeFile(`${LISTING_ID}-favorited-by.json`, favoriters)
         cy.expect(favoriters.length).to.equal(initialResponse.body.count)
       })
   })
