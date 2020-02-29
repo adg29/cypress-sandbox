@@ -56,7 +56,7 @@ context('Reusable "findAllListingsFavoredBy" custom command', function () {
   it('can iterate over paginated results', function () {
     cy.expectIterativePaginationResults(initialResponse, favoriters)
       .then(() => {
-        cy.writeFile(`${LISTING_ID}-favorited-by.json`, favoriters)
+        cy.writeFile(`data/etsy/favorited-by-${LISTING_ID}.json`, favoriters)
         cy.expect(favoriters.length).to.equal(initialResponse.body.count)
       })
   })
