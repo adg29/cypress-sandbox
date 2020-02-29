@@ -9,7 +9,7 @@
 let LISTING_ID = 590611832
 let favoriters = []
 let initialResponse = null
-const API_KEY = '9dvg8atlqwp5454a2a444o7j'
+const API_KEY = Cypress.env('ETSY_API_KEY') 
 
 Cypress.Commands.add('findAllListingsFavoredBy', (listingId, options = {}) => {
   Cypress.log({
@@ -26,15 +26,8 @@ Cypress.Commands.add('findAllListingsFavoredBy', (listingId, options = {}) => {
 })
 
 Cypress.Commands.add('expectIterativePaginationResults', (response) => {
-  cy.log(response.body)
-  cy.log('pushing', response.body.results)
-  cy.log('pushing', favoriters)
   favoriters.push(...response.body.results)
-  cy.log('collected', favoriters.length)
-  cy.log(favoriters)
   if(response.body.pagination.next_page) {
-    console.log('next page')
-    console.log(response.body.pagination.next_page)
     cy.findAllListingsFavoredBy(LISTING_ID, {page: response.body.pagination.next_page})
       .then(cy.expectIterativePaginationResults)
   } else {
@@ -45,7 +38,7 @@ Cypress.Commands.add('expectIterativePaginationResults', (response) => {
 Cypress.Commands.add('expectValidJsonWithCount', (response, length = 0) => {
   expect(response.status).to.eq(200)
   expect(response.body).to.not.be.null
-  // Ensure certain properties are present
+  // Ensure certain properties are included in response body
   expect(response.body).to.include.keys('count', 'pagination')
 })
 
