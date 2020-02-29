@@ -16,6 +16,7 @@ describe('XHR Messaging via Modal using fixtures', function () {
       // Override calls to URLs starting with activities/ and use the
       // content of activities.json as the response
       cy.route('GET', 'api/*', {}).as('apiXHR')
+      cy.route('GET', 'framelog*', {}).as('framelog')
     })
 
     it('successfully logs in', () => {
