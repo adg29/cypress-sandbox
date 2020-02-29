@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 describe('XHR Messaging via Modal using fixtures', function () {
+  const listings = require('../../fixtures/etsy-listings-favoritedBy')
   // sensitive information like username and password
   // should be passed via environment variables
   const username = Cypress.env('ETSY_USERNAME') 
@@ -21,15 +22,18 @@ describe('XHR Messaging via Modal using fixtures', function () {
       cy.get('[data-appears-component-name*="WelcomeRow"]').should('contain', 'cypress')
     })
 
-    it('visits people pages', () => {
-      cy.fixture('etsy-listings-favoritedBy.json').then((data) => {
-        data.favoritedBy.slice(0,1).forEach((favorite) => {
-          cy.visit(`/people/${favorite.User.login_name}`)
-          cy.get('.convo-overlay-trigger').filter(':visible').as('messageTrigger')
+    listings.favoritedBy.forEach((favorite) => {
+      if (favorite.User) {
+        const userLogin = `${favorite["User"].login_name}`
+        it(`Contacts ${userLogin}`, () => {
+          cy.visit(`/people/${userLogin}`)
+          cy.get('.convo-overlay-trigger', {timeout: 30000}).filter(':visible').as('messageTrigger')
             .click()
-          cy.get('form#chat-ui-composer textarea').type(Cypress.env('MARKETING_MESSAGE'))
+          cy.get('form#chat-ui-composer textarea', {timeout: 60000}).type(Cypress.env('MARKETING_MESSAGE'))
+          cy.get('form#chat-ui-composer button[aria-label="Send chat message"]').should('be.visible')
+          cy.log(`${userLogin} ready to message`)
         })
-      })
+      }
     })
   })
 })
