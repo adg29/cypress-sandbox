@@ -10,6 +10,14 @@ describe('XHR Messaging via Modal using fixtures', function () {
 
   context('XHR form submission', function () {
 
+    beforeEach(function () {
+      // Start Cypress' server to hook into XHR requests
+      cy.server()
+      // Override calls to URLs starting with activities/ and use the
+      // content of activities.json as the response
+      cy.route('GET', 'api/*', {}).as('apiXHR')
+    })
+
     it('successfully logs in', () => {
       cy.visit('/')
       cy.get('.signin-header-action').as('modal')
