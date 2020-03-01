@@ -15,22 +15,43 @@ describe('XHR Messaging via Modal using fixtures', function () {
       cy.server()
       // Override calls to URLs starting with activities/ and use the
       // content of activities.json as the response
-      cy.route('GET', 'api/*', {}).as('apiXHR')
-      cy.route('GET', 'framelog*', {}).as('framelog')
+      cy.route('GET', '*api*', {}).as('routeApiXHR')
+      cy.route('*match*', {}).as('routeMatch')
+      cy.route('*bcn*', {}).as('routeBcn')
+      cy.route('*framelog*', {}).as('routeFramelog')
     })
 
-    it('successfully logs in', () => {
+    let isLoggedIn = false;
+    it('isLoggedIn', () => {
       cy.visit('/')
-      cy.get('.signin-header-action').as('modal')
-        .click()
 
-      cy.get('form#join-neu-form input[name=email]').type(username)
-      cy.get('form#join-neu-form input[name=password]').type(password)
-      cy.get('form#join-neu-form').submit()
+    // this only works if there's 100% guarantee
+    // body has fully rendered without any pending changes
+    // to its state
+    cy.get('body').then(($body) => {
+        // synchronously ask for the body's text
+        // and do something based on whether it includes
+        // another string
+        if ($body.text().includes('Welcome back')) {
+          isLoggedIn = true
+        }
+      })
+    });
 
-      // we should be in
-      cy.get('[data-appears-component-name*="WelcomeRow"]').should('contain', 'cypress')
-    })
+      it('successfully renders homepage', function() {
+        if (isLoggedIn) {
+          this.skip()
+        } else {
+          cy.get('.signin-header-action').as('modal')
+            .click()
+          cy.get('form#join-neu-form input[name=email]').type(username)
+          cy.get('form#join-neu-form input[name=password]').type(password)
+          cy.get('form#join-neu-form').submit()
+
+          // we should be in
+          cy.get('[data-appears-component-name*="WelcomeRow"]').should('contain', 'cypress')
+        }
+      })
 
     listings.favoritedBy.forEach((favorite) => {
       if (favorite.User) {
@@ -39,9 +60,13 @@ describe('XHR Messaging via Modal using fixtures', function () {
           cy.visit(`/people/${userLogin}`)
           cy.get('.convo-overlay-trigger', {timeout: 30000}).filter(':visible').last().as('messageTrigger')
             .click()
-          cy.get('form#chat-ui-composer textarea', {timeout: 60000}).type(Cypress.env('MARKETING_MESSAGE'))
-          cy.get('form#chat-ui-composer button[aria-label="Send chat message"]').should('be.visible')
-          cy.log(`${userLogin} ready to message`)
+          cy.get('form#chat-ui-composer textarea', {timeout: 60000})
+            .then(chatBox => {
+              cy.wrap(chatBox).type(Cypress.env('MARKETING_MESSAGE'))
+              cy.get('form#chat-ui-composer button[aria-label="Send chat message"]').should('be.visible')
+              cy.log(`${userLogin} ready to message`)
+
+            })
         })
       }
     })
