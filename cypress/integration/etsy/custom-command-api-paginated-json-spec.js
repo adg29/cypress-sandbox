@@ -63,7 +63,7 @@ context(`Finds etsy user names for favorited listing ${LISTING_ID}`, function ()
     foundUsers.forEach(fave => {
       fave.User.marketing_outreach_status = ''
     })
-    cy.writeFile(`data/etsy/favorited-by-${LISTING_ID}.json`, favoriters)
+    cy.writeFile(`cypress/results/etsy/favorited-by-${LISTING_ID}.json`, favoriters)
     cy.expect(favoriters.length).to.equal(initialResponse.body.count)
 
   })
