@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import 'cypress-pipe'
 describe('XHR Messaging via Modal using fixtures', function () {
-  const LISTINGS_FILENAME = 'etsy-listings-favoritedBy-alangalan.json'
+  const LISTINGS_FILENAME = 'fixtures/etsy-listings-favoritedBy-alangalan.json'
   const LISTINGS_FIXTURE = require('../../fixtures/etsy-listings-favoritedBy-alangalan')
   const listings = LISTINGS_FIXTURE 
   // sensitive information like username and password
@@ -85,8 +85,7 @@ describe('XHR Messaging via Modal using fixtures', function () {
             .should('contain', Cypress.env('MARKETING_MESSAGE'))
 
             favorite.User.marketing_outreach_status = 'completed'
-            console.log(listings)
-            cy.writeFile(`cypress/fixtures/${LISTINGS_FILENAME}`, listings)
+            cy.writeFile(`cypress/${LISTINGS_FILENAME}`, listings)
         })
       }
     })
