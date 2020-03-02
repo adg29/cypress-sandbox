@@ -1,6 +1,27 @@
 [
   {
     "listing_id": 590611832,
+    "user_id": 39193517,
+    "listing_state": "active",
+    "create_date": 1583126840,
+    "User": {
+      "user_id": 39193517,
+      "login_name": "sbrody116",
+      "creation_tsz": 1383164578,
+      "user_pub_key": {
+        "key": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAsMXt4xeRCISXHe6o2ZaA\niwd/PQm/7bNqLArRTGro2ovahaL2hRhyUZYCuUlQ6iRrNp3MdHABkH8TmU/1H6ZC\nut0NNNiIksr1F6tUkWNRU1aBgupa04qNcrKpzpTnTS2lYK2c94v712Hdp6OyLUFF\nkm82j58XmVc278iWJ8p/Twp14h2EljSIOLg9DtvGJAQ3bf1bl0izWEBi2WrVddYO\nKfDu8leIkOOwdF82KUFLNB21FZjCe54m9qb6AhF7tqT9Oh7e899+5zE2Cyokqfr4\n2ngry9Mfr6x+7HCKHccWBWdxbuacN0bQmmfPox5hGOnAEGHg2ae0D6yuDDhOu453\nY1m7uU/RbYf5gRHRQMk4UJz/Jc+yttWaEMjw3NwhRwRSv4Xcdzd+4fK8nJKFVoxU\nluvWJAIoWqYdlnqc/sE76LJhlm1gJqhi3IqYK6r0bEQJ9iP6YXubq10zOKNgpZMp\na9gHoH/Nh7eRDAEU9kG7vPlWDFuI846g63UG7oAHJaysgXiQ+c/VvROK1rXMUIrM\ntOpGX4FZV1V6FyfT+lzAV7qy/M5kG5RuwiNE0EupuoqNcBZGUJY8AWZoSZ5vokoU\nqJ7KyMk8lLiuVrPAUsQdS/ew/9DfcocsgEkAsbjGJ+E+SnAxGY87DCq6SQaD7X+z\nbphzZMtGRBDFceJPHxjj0fECAwEAAQ==\n-----END PUBLIC KEY-----\n",
+        "key_id": 23477745721
+      },
+      "referred_by_user_id": null,
+      "feedback_info": {
+        "count": 0,
+        "score": null
+      },
+      "marketing_outreach_status": ""
+    }
+  },
+  {
+    "listing_id": 590611832,
     "user_id": 255511424,
     "listing_state": "active",
     "create_date": 1582414249,
@@ -16,7 +37,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -36,7 +58,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -56,7 +79,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -76,7 +100,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -104,7 +129,8 @@
       "feedback_info": {
         "count": 2,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -129,7 +155,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -149,7 +176,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -169,7 +197,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -197,7 +226,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -217,7 +247,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -237,7 +268,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -257,7 +289,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -277,7 +310,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -297,7 +331,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -317,7 +352,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -337,7 +373,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -357,7 +394,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -377,7 +415,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -403,9 +442,10 @@
       },
       "referred_by_user_id": null,
       "feedback_info": {
-        "count": 399,
+        "count": 400,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -425,7 +465,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -445,7 +486,8 @@
       "feedback_info": {
         "count": 17,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -465,7 +507,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -482,7 +525,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -502,7 +546,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -522,7 +567,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -542,7 +588,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -562,7 +609,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -582,7 +630,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -602,7 +651,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -622,7 +672,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -642,7 +693,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -662,7 +714,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -682,7 +735,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -702,7 +756,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -722,7 +777,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -742,7 +798,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -762,7 +819,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -782,7 +840,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -802,7 +861,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -822,7 +882,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -847,7 +908,8 @@
       "feedback_info": {
         "count": 1,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -867,7 +929,8 @@
       "feedback_info": {
         "count": 4,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -887,7 +950,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -907,7 +971,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -927,7 +992,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -947,7 +1013,8 @@
       "feedback_info": {
         "count": 1,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -967,7 +1034,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -987,7 +1055,8 @@
       "feedback_info": {
         "count": 3,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1007,7 +1076,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1027,7 +1097,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1047,7 +1118,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1067,7 +1139,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1087,7 +1160,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1107,7 +1181,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1135,7 +1210,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1155,7 +1231,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1175,7 +1252,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1195,7 +1273,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1215,7 +1294,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1235,7 +1315,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1255,7 +1336,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1275,7 +1357,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1295,7 +1378,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1315,7 +1399,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1335,7 +1420,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1355,7 +1441,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1375,7 +1462,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1395,7 +1483,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1415,7 +1504,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1435,7 +1525,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1455,7 +1546,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1475,7 +1567,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1495,7 +1588,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1515,7 +1609,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1535,7 +1630,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1555,7 +1651,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1575,7 +1672,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1595,7 +1693,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1615,7 +1714,8 @@
       "feedback_info": {
         "count": 2,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1635,7 +1735,8 @@
       "feedback_info": {
         "count": 1,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1655,7 +1756,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1673,9 +1775,10 @@
       },
       "referred_by_user_id": null,
       "feedback_info": {
-        "count": 164,
+        "count": 165,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1695,7 +1798,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1715,7 +1819,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1735,7 +1840,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1755,7 +1861,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1775,7 +1882,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1795,7 +1903,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1815,7 +1924,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1835,7 +1945,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1863,7 +1974,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1883,7 +1995,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1903,7 +2016,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1923,7 +2037,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1943,7 +2058,8 @@
       "feedback_info": {
         "count": 14,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1963,7 +2079,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -1983,7 +2100,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2000,7 +2118,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2020,7 +2139,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2040,7 +2160,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2060,7 +2181,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2080,7 +2202,8 @@
       "feedback_info": {
         "count": 1,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2100,7 +2223,8 @@
       "feedback_info": {
         "count": 4,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2120,7 +2244,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2140,7 +2265,8 @@
       "feedback_info": {
         "count": 2,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2160,7 +2286,8 @@
       "feedback_info": {
         "count": 62,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2180,7 +2307,8 @@
       "feedback_info": {
         "count": 43,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2200,7 +2328,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2220,7 +2349,8 @@
       "feedback_info": {
         "count": 2,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2237,7 +2367,8 @@
       "feedback_info": {
         "count": 2,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2257,7 +2388,8 @@
       "feedback_info": {
         "count": 1,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2277,7 +2409,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2297,7 +2430,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2317,7 +2451,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2337,7 +2472,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2357,7 +2493,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2385,7 +2522,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2405,7 +2543,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2425,7 +2564,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2453,7 +2593,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2473,7 +2614,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2493,7 +2635,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2510,7 +2653,8 @@
       "feedback_info": {
         "count": 2,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2527,7 +2671,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2547,7 +2692,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2567,7 +2713,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2587,7 +2734,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2607,7 +2755,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2627,7 +2776,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2647,7 +2797,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2667,7 +2818,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2687,7 +2839,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2707,7 +2860,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2727,7 +2881,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2747,7 +2902,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2767,7 +2923,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2787,7 +2944,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2807,7 +2965,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2835,7 +2994,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2855,7 +3015,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2883,7 +3044,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2903,7 +3065,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2931,7 +3094,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2951,7 +3115,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2971,7 +3136,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -2991,7 +3157,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3011,7 +3178,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3031,7 +3199,8 @@
       "feedback_info": {
         "count": 116,
         "score": 97
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3051,7 +3220,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3079,7 +3249,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3099,7 +3270,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3119,7 +3291,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3139,7 +3312,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3156,7 +3330,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3176,7 +3351,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3196,7 +3372,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3224,7 +3401,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3244,7 +3422,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3264,7 +3443,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3284,7 +3464,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3304,7 +3485,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3324,7 +3506,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3344,7 +3527,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3364,7 +3548,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3384,7 +3569,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3404,7 +3590,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3424,7 +3611,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3452,7 +3640,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3472,7 +3661,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3492,7 +3682,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3512,7 +3703,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3532,7 +3724,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3552,7 +3745,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3572,7 +3766,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3600,7 +3795,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3620,7 +3816,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3640,7 +3837,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3660,7 +3858,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3680,7 +3879,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3708,7 +3908,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3728,7 +3929,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3748,7 +3950,8 @@
       "feedback_info": {
         "count": 66,
         "score": 100
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3768,7 +3971,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3785,7 +3989,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3805,7 +4010,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3825,7 +4031,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   },
   {
@@ -3845,7 +4052,8 @@
       "feedback_info": {
         "count": 0,
         "score": null
-      }
+      },
+      "marketing_outreach_status": ""
     }
   }
 ]
