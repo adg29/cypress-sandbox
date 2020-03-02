@@ -58,7 +58,7 @@ describe('XHR Messaging via Modal using fixtures', function () {
     listings.favoritedBy.forEach((favorite) => {
       if (favorite.User && !favorite.User.marketing_outreach_status) {
         const userLogin = `${favorite["User"].login_name}`
-        it(`Contacts ${userLogin}`, () => {
+        it(`Writes MARKETING_MESSAGE for ${userLogin}`, () => {
           cy.visit(`/people/${userLogin}`)
           cy.get('.convo-overlay-trigger', {timeout: 30000}).filter(':visible').last().as('messageTrigger')
             .click()
@@ -70,23 +70,28 @@ describe('XHR Messaging via Modal using fixtures', function () {
               .should('have.value', Cypress.env('MARKETING_MESSAGE'))
             return cy.wrap(chatBox)
           }
+
           cy.get('form#chat-ui-composer textarea', {timeout: 60000})
             .pipe(type)
           cy.log(`${userLogin} ready to message`)
-          cy.get('form#chat-ui-composer button[aria-label="Send chat message"]')
-            .should('be.visible')
-            .click()
-
-          const threadText = $thread => {
-            return $thread.text()
-          }
-          cy.get('.convo-details .thread')
-            .pipe(threadText)
-            .should('contain', Cypress.env('MARKETING_MESSAGE'))
-
-            favorite.User.marketing_outreach_status = 'completed'
-            cy.writeFile(`cypress/${LISTINGS_FILENAME}`, listings)
         })
+
+        if (Cypress.env('MARKETING_SUBMIT')) {
+          it(`Submits MARKETING_MESSAGE for ${userLogin}`, function() {
+            cy.get('form#chat-ui-composer button[aria-label="Send chat message"]')
+              .should('be.visible')
+              .click()
+            const threadText = $thread => {
+              return $thread.text()
+            }
+            cy.get('.convo-details .thread')
+              .pipe(threadText)
+              .should('contain', Cypress.env('MARKETING_MESSAGE'))
+
+              favorite.User.marketing_outreach_status = 'completed'
+              cy.writeFile(`cypress/${LISTINGS_FILENAME}`, listings)
+          })
+        }
       }
     })
   })
