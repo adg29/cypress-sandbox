@@ -38,12 +38,12 @@ Cypress.Commands.add('findAllListingsFavoredBy', (LISTING_ID, API_KEY, queryPara
   })
 })
 
-Cypress.Commands.add('storeIterativePaginationResults', (response, favoritesStore, LISTING_ID, API_KEY) => {
-  favoritesStore.push(...response.body.results)
+Cypress.Commands.add('storeIterativePaginationResults', (response, favoritersStore, LISTING_ID, API_KEY) => {
+  favoritersStore.push(...response.body.results)
   if(response.body.pagination.next_page) {
     cy.findAllListingsFavoredBy(LISTING_ID, API_KEY, {page: response.body.pagination.next_page})
       .then(function(response) {
-        cy.storeIterativePaginationResults(response, favoritesStore, LISTING_ID, API_KEY)
+        cy.storeIterativePaginationResults(response, favoritersStore, LISTING_ID, API_KEY)
       })
   } else {
     expect(true)
