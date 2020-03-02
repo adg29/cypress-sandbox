@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-
+import 'cypress-pipe'
 describe('XHR Messaging via Modal using fixtures', function () {
   const listings = require('../../fixtures/etsy-listings-favoritedBy')
   // sensitive information like username and password
@@ -60,13 +60,17 @@ describe('XHR Messaging via Modal using fixtures', function () {
           cy.visit(`/people/${userLogin}`)
           cy.get('.convo-overlay-trigger', {timeout: 30000}).filter(':visible').last().as('messageTrigger')
             .click()
-          cy.get('form#chat-ui-composer textarea', {timeout: 60000})
-            .then(chatBox => {
-              cy.wrap(chatBox).type(Cypress.env('MARKETING_MESSAGE'))
-              cy.get('form#chat-ui-composer button[aria-label="Send chat message"]').should('be.visible')
-              cy.log(`${userLogin} ready to message`)
 
-            })
+          const type = chatBox => {
+            cy.wait(1000)
+            cy.wrap(chatBox).type(Cypress.env('MARKETING_MESSAGE'))
+            cy.get('form#chat-ui-composer button[aria-label="Send chat message"]').should('be.visible')
+            cy.log(`${userLogin} ready to message`)
+            return cy.wrap(chatBox)
+          }
+          cy.get('form#chat-ui-composer textarea', {timeout: 60000})
+            .pipe(type)
+            .should('have.value', Cypress.env('MARKETING_MESSAGE'))
         })
       }
     })

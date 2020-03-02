@@ -8,5 +8,8 @@
     "dev": "../../node_modules/.bin/start-test 7079 cypress:open",
     "start": "node server.js --port 7079",
     "test:ci": "../../node_modules/.bin/start-test 7079 cypress:run"
+  },
+  "devDependencies": {
+    "cypress-pipe": "^1.6.4"
   }
 }
