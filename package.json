@@ -10,6 +10,7 @@
     "test:ci": "../../node_modules/.bin/start-test 7079 cypress:run"
   },
   "devDependencies": {
+    "cypress": "^4.1.0",
     "cypress-pipe": "^1.6.4"
   }
 }
