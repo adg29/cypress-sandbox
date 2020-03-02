@@ -1,7 +1,9 @@
 /// <reference types="cypress" />
 import 'cypress-pipe'
 describe('XHR Messaging via Modal using fixtures', function () {
-  const listings = require('../../fixtures/etsy-listings-favoritedBy')
+  const LISTINGS_FILENAME = 'etsy-listings-favoritedBy-alangalan.json'
+  const LISTINGS_FIXTURE = require('../../fixtures/etsy-listings-favoritedBy-alangalan')
+  const listings = LISTINGS_FIXTURE 
   // sensitive information like username and password
   // should be passed via environment variables
   const username = Cypress.env('ETSY_USERNAME') 
@@ -54,7 +56,7 @@ describe('XHR Messaging via Modal using fixtures', function () {
       })
 
     listings.favoritedBy.forEach((favorite) => {
-      if (favorite.User) {
+      if (favorite.User && !favorite.User.marketing_outreach_status) {
         const userLogin = `${favorite["User"].login_name}`
         it(`Contacts ${userLogin}`, () => {
           cy.visit(`/people/${userLogin}`)
@@ -63,14 +65,28 @@ describe('XHR Messaging via Modal using fixtures', function () {
 
           const type = chatBox => {
             cy.wait(1000)
-            cy.wrap(chatBox).type(Cypress.env('MARKETING_MESSAGE'))
-            cy.get('form#chat-ui-composer button[aria-label="Send chat message"]').should('be.visible')
-            cy.log(`${userLogin} ready to message`)
+            cy.wrap(chatBox)
+              .type(Cypress.env('MARKETING_MESSAGE'))
+              .should('have.value', Cypress.env('MARKETING_MESSAGE'))
             return cy.wrap(chatBox)
           }
           cy.get('form#chat-ui-composer textarea', {timeout: 60000})
             .pipe(type)
-            .should('have.value', Cypress.env('MARKETING_MESSAGE'))
+          cy.log(`${userLogin} ready to message`)
+          cy.get('form#chat-ui-composer button[aria-label="Send chat message"]')
+            .should('be.visible')
+            .click()
+
+          const threadText = $thread => {
+            return $thread.text()
+          }
+          cy.get('.convo-details .thread')
+            .pipe(threadText)
+            .should('contain', Cypress.env('MARKETING_MESSAGE'))
+
+            favorite.User.marketing_outreach_status = 'completed'
+            console.log(listings)
+            cy.writeFile(`cypress/fixtures/${LISTINGS_FILENAME}`, listings)
         })
       }
     })
