@@ -6,7 +6,7 @@
 // but because this custom command is specific to this example
 // we'll keep it here
 
-let LISTING_ID = 590611832
+let LISTING_ID = Cypress.env('LISTING_ID')
 let favoriters = []
 let initialResponse = null
 const API_KEY = Cypress.env('ETSY_API_KEY') 
