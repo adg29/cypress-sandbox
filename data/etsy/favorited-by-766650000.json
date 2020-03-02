@@ -1,0 +1,20 @@
+[
+  {
+    "listing_id": 766650000,
+    "user_id": 6014691,
+    "listing_state": "active",
+    "create_date": 1582691858,
+    "User": {
+      "user_id": 6014691,
+      "login_name": "alangalan",
+      "creation_tsz": 1284869503,
+      "user_pub_key": null,
+      "referred_by_user_id": null,
+      "feedback_info": {
+        "count": 0,
+        "score": null
+      },
+      "marketing_outreach_status": ""
+    }
+  }
+]
