@@ -42,8 +42,8 @@ Cypress.Commands.add('expectValidJsonWithCount', (response, length = 0) => {
   expect(response.body).to.include.keys('count', 'pagination')
 })
 
-context('Reusable "findAllListingsFavoredBy" custom command', function () {
-  it('can visit results page 1 of favored-by', function () {
+context(`Finds etsy user names for favorited listing ${LISTING_ID}`, function () {
+  it('requests page 1 results', function () {
     cy.findAllListingsFavoredBy(LISTING_ID)
       .then(response => {
           if (!initialResponse) {
@@ -53,12 +53,19 @@ context('Reusable "findAllListingsFavoredBy" custom command', function () {
       })
   })
 
-  it('can iterate over paginated results', function () {
+  it('requests all paginated results', function () {
     cy.expectIterativePaginationResults(initialResponse, favoriters)
-      .then(() => {
-        cy.writeFile(`data/etsy/favorited-by-${LISTING_ID}.json`, favoriters)
-        cy.expect(favoriters.length).to.equal(initialResponse.body.count)
-      })
+  })
+
+  it(`adds marketing outreach status to all results`, function() {
+    let foundUsers = favoriters.filter(f => f.User)
+    cy.log(`Found ${foundUsers.length} users for outreach`)
+    foundUsers.forEach(fave => {
+      fave.User.marketing_outreach_status = ''
+    })
+    cy.writeFile(`data/etsy/favorited-by-${LISTING_ID}.json`, favoriters)
+    cy.expect(favoriters.length).to.equal(initialResponse.body.count)
+
   })
 
 })
