@@ -30,5 +30,4 @@ context(`Finds etsy user names for favorited listing ${LISTING_ID}`, function ()
     cy.expect(favoritersStore.length).to.equal(initialResponse.body.count)
 
   })
-
 })

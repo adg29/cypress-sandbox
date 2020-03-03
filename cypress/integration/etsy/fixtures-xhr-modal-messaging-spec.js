@@ -1,5 +1,4 @@
 /// <reference types="cypress" />
-import 'cypress-pipe'
 describe('XHR Messaging via Modal using fixtures', function () {
   const LISTINGS_FILENAME = 'fixtures/etsy-listings-favoritedBy-alangalan.json'
   const LISTINGS_FIXTURE = require('../../fixtures/etsy-listings-favoritedBy-alangalan')
