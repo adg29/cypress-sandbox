@@ -1,8 +1,8 @@
 {
+  "testFiles": "**/favorite-related-*-spec.js",
   "baseUrl": "https://www.etsy.com",
   "fixturesFolder": "cypress/fixtures",
   "LISTING_ID": "766650000",
   "MARKETING_MESSAGE": "Hello! This item may interest you, check it out!",
   "MARKETING_SUBMIT": 0
-
 }
