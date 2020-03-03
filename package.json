@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "Log into the server using XHR from end-to-end tests",
   "scripts": {
-    "cypress:open": "../../node_modules/.bin/cypress open --project ./",
-    "cypress:run": "../../node_modules/.bin/cypress run",
-    "dev": "../../node_modules/.bin/start-test 7079 cypress:open",
-    "start": "node server.js --port 7079",
-    "test:ci": "../../node_modules/.bin/start-test 7079 cypress:run"
+    "cypress:open": "cypress open --project ./",
+    "cypress:run": "cypress run"
   },
   "devDependencies": {
     "cypress": "^4.1.0",
     "cypress-pipe": "^1.6.4"
+  },
+  "dependencies": {
+    "@cypress/browserify-preprocessor": "^2.1.4",
+    "axios": "^0.19.2"
   }
 }
