@@ -2793,6 +2793,13 @@ let initialResponse = null
 
 const LISTINGS_FILENAME = `results/etsy-listing-${LISTING_ID}-favoritedBy.json`
 
+const WAIT_INTERVAL_MIN = Cypress.env('MARKETING_WAIT_INTERVAL_MIN')
+const WAIT_INTERVAL_MAX = Cypress.env('MARKETING_WAIT_INTERVAL_MAX')
+
+const randomIntFromInterval = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
 describe('Marketing automation related to favorites by users ', function () {
   // sensitive information like username and password
   // should be passed via environment variables
@@ -2880,6 +2887,8 @@ describe('Marketing automation related to favorites by users ', function () {
 
               favorite.User.marketing_outreach_status = 'completed'
               cy.writeFile(`${LISTINGS_FILENAME}`, favoritersStore)
+
+            cy.wait(randomIntFromInterval(WAIT_INTERVAL_MIN, WAIT_INTERVAL_MAX))
           })
         }
       }

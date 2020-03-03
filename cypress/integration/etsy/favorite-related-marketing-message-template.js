@@ -37,33 +37,33 @@ describe('Marketing automation related to favorites by users ', function () {
     it('isLoggedIn', () => {
       cy.visit('/')
 
-    // this only works if there's 100% guarantee
-    // body has fully rendered without any pending changes
-    // to its state
-    cy.get('body').then(($body) => {
-        // synchronously ask for the body's text
-        // and do something based on whether it includes
-        // another string
-        if ($body.text().includes('Welcome back')) {
-          isLoggedIn = true
-        }
-      })
+      // this only works if there's 100% guarantee
+      // body has fully rendered without any pending changes
+      // to its state
+      cy.get('body').then(($body) => {
+          // synchronously ask for the body's text
+          // and do something based on whether it includes
+          // another string
+          if ($body.text().includes('Welcome back')) {
+            isLoggedIn = true
+          }
+        })
     });
 
-      it('successfully renders homepage', function() {
-        if (isLoggedIn) {
-          this.skip()
-        } else {
-          cy.get('.signin-header-action').as('modal')
-            .click()
-          cy.get('form#join-neu-form input[name=email]').type(username)
-          cy.get('form#join-neu-form input[name=password]').type(password)
-          cy.get('form#join-neu-form').submit()
+    it('successfully renders homepage', function() {
+      if (isLoggedIn) {
+        this.skip()
+      } else {
+        cy.get('.signin-header-action').as('modal')
+          .click()
+        cy.get('form#join-neu-form input[name=email]').type(username)
+        cy.get('form#join-neu-form input[name=password]').type(password)
+        cy.get('form#join-neu-form').submit()
 
-          // we should be in
-          cy.get('[data-appears-component-name*="WelcomeRow"]').should('contain', 'cypress')
-        }
-      })
+        // we should be in
+        cy.get('[data-appears-component-name*="WelcomeRow"]').should('contain', 'cypress')
+      }
+    })
 
     favoritersStore.forEach((favorite) => {
       if (favorite.User && !favorite.User.marketing_outreach_status) {
