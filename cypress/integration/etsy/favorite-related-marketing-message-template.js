@@ -40,17 +40,23 @@ describe('Marketing automation related to favorites by users ', function () {
       // this only works if there's 100% guarantee
       // body has fully rendered without any pending changes
       // to its state
-      cy.get('body').then(($body) => {
+      cy.get('[data-appears-component-name*="WelcomeRow"]').then(($welcomeBody) => {
           // synchronously ask for the body's text
           // and do something based on whether it includes
           // another string
-          if ($body.text().includes('Welcome back')) {
+          if ($welcomeBody.text().includes('Welcome back')) {
             isLoggedIn = true
+            cy.log('Logged In')
+            expect(true)
+          } else {
+            cy.log('Not Logged In')
+            expect(false)
           }
         })
     });
 
     it('successfully renders homepage', function() {
+      cy.log(!isLoggedIn ? 'Logging in' : 'Skipping XHR Login')
       if (isLoggedIn) {
         this.skip()
       } else {
@@ -61,7 +67,7 @@ describe('Marketing automation related to favorites by users ', function () {
         cy.get('form#join-neu-form').submit()
 
         // we should be in
-        cy.get('[data-appears-component-name*="WelcomeRow"]').should('contain', 'cypress')
+        cy.get('[data-appears-component-name*="WelcomeRow"]').should('contain', 'Welcome back')
       }
     })
 
