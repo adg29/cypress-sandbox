@@ -55,15 +55,21 @@ describe('Marketing automation related to favorites by users ', function () {
         })
     });
 
+    const SELECTORS = {
+      SIGNIN_ACTION_CLASSNAME: '.signin-header-action',
+      SIGNIN_EMAIL_INPUT: 'form#join-neu-form input[name=email]',
+      SIGNIN_PASSWORD_INPUT: 'form#join-neu-form input[name=password]'
+    }
+
     it('successfully renders homepage', function() {
       cy.log(!isLoggedIn ? 'Logging in' : 'Skipping XHR Login')
       if (isLoggedIn) {
         this.skip()
       } else {
-        cy.get('.signin-header-action').as('modal')
+        cy.get(SELECTORS.SIGNIN_ACTION_CLASSNAME).as('modal')
           .click()
-        cy.get('form#join-neu-form input[name=email]').type(username)
-        cy.get('form#join-neu-form input[name=password]').type(password)
+        cy.get(SELECTORS.SIGNIN_EMAIL_INPUT).type(username)
+        cy.get(SELECTORS.SIGNIN_EMAIL_PASSWORD).type(password)
         cy.get('form#join-neu-form').submit()
 
         // we should be in
