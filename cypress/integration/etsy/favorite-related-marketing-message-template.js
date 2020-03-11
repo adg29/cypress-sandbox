@@ -58,7 +58,8 @@ describe('Marketing automation related to favorites by users ', function () {
     const SELECTORS = {
       SIGNIN_ACTION_CLASSNAME: '.signin-header-action',
       SIGNIN_EMAIL_INPUT: 'form#join-neu-form input[name=email]',
-      SIGNIN_PASSWORD_INPUT: 'form#join-neu-form input[name=password]'
+      SIGNIN_PASSWORD_INPUT: 'form#join-neu-form input[name=password]',
+      SIGNIN_WELCOME_ATTRIBUTE: '[data-appears-component-name*="WelcomeRow"]'
     }
 
     it('successfully renders homepage', function() {
